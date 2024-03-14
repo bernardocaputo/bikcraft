@@ -1,0 +1,65 @@
+ .contato-lojas {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 0 40px;
+   padding-bottom: 120px;
+ }
+
+ .contato-lojas h2 {
+   grid-column: 1/-1;
+ }
+
+ .contato-lojas img {
+   border-radius: 4px 4px 0 0;
+ }
+
+ .contato-lojas-conteudo {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 32px;
+   padding: 32px;
+   background-color: var(--cor-0);
+   box-shadow: 0 1px 2px rgb(0, 0, 0, 0.1);
+ }
+
+ .contato-lojas-conteudo h3,
+ .contato-lojas-tempo {
+   grid-column: 1/-1;
+ }
+
+
+ .contato-loja-dados {
+   display: grid;
+   gap: 8px;
+   border-left: 2px solid var(--cor-3);
+   padding-left: 12px;
+ }
+
+ .contato-lojas-tempo {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+ }
+
+ @media (max-width: 800px) {
+   .contato-lojas {
+     gap: 20px;
+     padding-top: 60px;
+     padding-bottom: 60px;
+   }
+
+   .contato-lojas h2 {
+     margin-bottom: 32px;
+   }
+
+   .contato-lojas-conteudo {
+     grid-template-columns: 1fr;
+   }
+ }
+
+
+ @media (max-width: 600px) {
+   .contato-lojas {
+     grid-template-columns: 1fr;
+   }
+ }
